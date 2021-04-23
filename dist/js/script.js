@@ -1,13 +1,15 @@
 window.addEventListener('DOMContentLoaded', function() {
 
-    let slides = document.querySelectorAll('.slider__item');
-    console.log(slides);
-    let slider = [];
+    new Swiper('.slider', {
+        //Arrow
+        navigation: {
+            nextEl: '.slider__next', //Кнопка next
+            prevEl: '.slider__prev' //Кнопка prev
+        },
         
-    for (let i = 0; i < slides.length; i++) {
-        slider[i] = slides[i];
-    }
-
-    console.log(slider);
+        slidesPerView: 4, //Количество выводимых слайдов
+        spaceBetween: 20, //Отступы между слайдами
+        loop: true, //Бесконечная прокрутка
+    });
 
 });

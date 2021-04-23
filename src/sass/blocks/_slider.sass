@@ -2,9 +2,7 @@
     position: relative
     margin-top: 17px
     &__wrapper
-        position: relative
         display: flex
-        transition: .5s all
     &__item
         width: 285px
         height: 355px
@@ -13,7 +11,6 @@
         background-repeat: no-repeat
         background-position: 100% 18%
         border-radius: 20px
-        margin-right: 20px
         &-title
             font-size: 25px
             line-height: 29px
@@ -70,33 +67,38 @@
             background-repeat: no-repeat
             background-position: 100% 0%
 
-.prev
-    position: absolute
-    width: 60px
-    height: 60px
-    background: #FFFFFF;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12)
-    transform: matrix(-1, 0, 0, 1, 0, 0)
-    border-radius: 100%
-    top: 88%
-    left: 127px
-    cursor: pointer
-    text-align: center
-    line-height: 54px
-    font-size: 25px
-.next
-    position: absolute
-    width: 60px
-    height: 60px
-    background: #FFFFFF;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12)
-    transform: matrix(-1, 0, 0, 1, 0, 0)
-    border-radius: 100%
-    top: 88%
-    right: 146px
-    cursor: pointer
-    text-align: center
-    line-height: 54px
-    font-size: 25px
+    &__prev
+        position: absolute
+        width: 60px
+        height: 60px
+        background: #FFFFFF
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12)
+        transform: matrix(-1, 0, 0, 1, 0, 0)
+        border-radius: 100%
+        top: 62%
+        left: 130px
+        cursor: pointer
+        text-align: center
+        line-height: 54px
+        font-size: 25px
+        &:focus
+            outline: none
+    &__next
+        position: absolute
+        width: 60px
+        height: 60px
+        background: #FFFFFF
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12)
+        transform: matrix(-1, 0, 0, 1, 0, 0)
+        border-radius: 100%
+        top: 62%
+        right: 130px
+        cursor: pointer
+        text-align: center
+        line-height: 54px
+        font-size: 25px
+        &:focus
+            outline: none
+
 
 
