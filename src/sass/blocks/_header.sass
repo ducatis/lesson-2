@@ -1,13 +1,20 @@
 .header
+    position: relative
     display: flex
     justify-content: space-between
+    &__logo
+        display: inline-block
+    &__nav
+        width: 900px
+        display: flex
+        justify-content: space-between
     &__menu
         display: flex
+        justify-content: space-between
         align-items: center
         list-style-type: none
-        margin-right: 18%
         margin-bottom: 0
-
+        width: 500px
         li
             margin-right: 35px
             &:nth-child(5)
@@ -15,15 +22,20 @@
         a
             color: #555555
     &__contacts
+        list-style-type: none
+    &__contact
+        padding-bottom: 14px
         img
-            margin-right: 10px
-        &-phone
-            a
-                color: #000
-        &-email
-            margin-top: 12px
-            a
-                color: #000
+            padding-right: 13px
+            
+        a
+            font-size: 15px
+            line-height: 18px
+            color: #000000
+        
+
+.hamburger
+    display: none
         
         
             

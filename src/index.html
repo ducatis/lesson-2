@@ -14,16 +14,37 @@
         <div class="container">
             <header class="header">
                 <div class="header__logo"><img src="icons/main_logo.svg" alt="main_logo"></div>
-                <ul class="header__menu">
-                    <li><a href="#">Influence</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">School</a></li>
-                    <li><a href="#">Agency</a></li>
-                    <li><a href="#">Special Project</a></li>
-                </ul>
-                <div class="header__contacts">
-                    <div class="header__contacts-phone"><img src="icons/phone_icon.png" alt="phone_icon"><a href="tel: +79999999999">+7 999 999 99 99</a></div>
-                    <div class="header__contacts-email"><img src="icons/mail_icon.png" alt="mail_icon"><a href="hi@geniuscode.ru">hi@geniuscode.ru</a></div>
+                <nav class="header__nav">
+                    <ul class="header__menu">
+                        <li class="header__menu-item"><a class="header__menu-link" href="#">Influence</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="#">Education</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="#">School</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="#">Agency</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="#">Special&nbsp;&nbsp;Project</a></li>
+                    </ul>
+
+                    <div class="header__contacts">
+                        <li class="header__contact">
+                            <picture>
+                                <source media="(max-width: 992px)" srcset="icons/phone_white_icon.png">
+                                <img src="icons/phone_icon.png" alt="phone_icon">
+                            </picture>
+                            <a href="tel: +79999999999">+7 999 999 99 99</a>
+                        </li>
+                        <li class="header__contact">
+                            <picture>
+                                <source media="(max-width: 992px)" srcset="icons/mail_white_icon.png">
+                                <img src="icons/mail_icon.png" alt="mail_icon">
+                            </picture>
+                            <a href="mailti: hi@geniuscode.ru">hi@geniuscode.ru</a>
+                        </li>
+                    </div>
+
+                </nav>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </header>
             <h1 class="promo__title">Образование для развития <br> твоей <span>гениальности</span></h1>
