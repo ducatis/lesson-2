@@ -126,15 +126,13 @@
         padding: 0 10px 
     .slider
         max-width: 300px
-    .slider__arrows-prev
-        display: none
-    .slider__arrows-next
-        display: none
+    
+
+
     .promo
         &__title
-            font-size: 45px
+            font-size: 48px
             line-height: 53px
-            text-align: center
     .header
         &__nav
             width: 84%
@@ -142,3 +140,19 @@
             li
                 a
                     font-size: 23px
+
+@media (max-width: 532px)
+    .container
+        max-width: 100% 
+    .slider__arrows-prev
+        width: 40px
+        height: 40px
+        line-height: 36px
+        left: 10px
+        background-color: rgba(255,255,255,.5)
+    .slider__arrows-next
+        width: 40px
+        height: 40px
+        line-height: 36px
+        right: 10px
+        background-color: rgba(255,255,255,.5)

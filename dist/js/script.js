@@ -17,7 +17,11 @@ window.addEventListener('DOMContentLoaded', function() {
             hamburger.classList.toggle('hamburger_active');
             menu.classList.toggle('header__nav_active');
         });
+
+
     });
+
+    
 
     //Carousel
 
